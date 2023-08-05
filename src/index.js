@@ -1,12 +1,10 @@
-import express from 'express';
-import ip from 'ip';
-import dotenv from 'dotenv';
+const app = require('./app/app');
+const dotenv = require('dotenv');
+const ip = require('ip');
 
 dotenv.config()
 
-const app = express();
-const PORT = process.env.SERVER_PORT;
-app.use(express.json());
+const PORT = process.env.SERVER_PORT || 3000;
 
 app.listen(PORT, () => console.log(`Server running on: ${ip.address()}:${PORT}`))
 

@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "Sistema de gestión de stock para librería de la plaza",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "start": "nodemon src/index.js"
   },
@@ -23,9 +22,8 @@
     "express": "^4.18.2",
     "ip": "^1.1.8",
     "mysql": "^2.18.1",
-    "mysql2": "^3.5.1",
-    "pino": "^8.14.1",
-    "pino-pretty": "^10.0.1"
+    "mysql2": "^3.6.0",
+    "sequelize": "^6.32.1"
   },
   "devDependencies": {
     "nodemon": "^3.0.1"
