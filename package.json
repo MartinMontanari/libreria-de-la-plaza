@@ -18,11 +18,12 @@
   },
   "homepage": "https://github.com/MartinMontanari/libreria-de-la-plaza#readme",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "express-handlebars": "^7.1.2",
     "ip": "^1.1.8",
-    "mongoose": "^7.4.2"
+    "mongoose": "^7.4.3"
   },
   "devDependencies": {
     "@babel/cli": "^7.22.10",
