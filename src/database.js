@@ -2,7 +2,7 @@ import { connect } from 'mongoose';
 
 (async () => {
     try {
-        const db = await connect("mongodb+srv://libadmin:mmJreCgY8GT2XoGL@cluster0.mj3papq.mongodb.net/liblaplaza?retryWrites=true&w=majority")
+        const db = await connect(process.env.MONGO_DB_CONNECTION_STRING)
         console.log("DB connected to", db.connection.name);
 
     } catch (error) {

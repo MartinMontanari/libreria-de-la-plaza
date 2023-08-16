@@ -15,7 +15,7 @@ export default class CreateArticleAction {
             await article.save();
             return res.status(201).json({ message: "Articulo guardado correctamente."});
         } catch(error){
-            console.error("Ocurrió un error al guardar el artículo:", error);
+            console.error("Ocurrió un error al guardar el artículo", error);
             return res.status(422).json({ message: "Error al guardar el artículo"})
         }
         
