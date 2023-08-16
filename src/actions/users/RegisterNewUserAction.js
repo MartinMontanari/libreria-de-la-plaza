@@ -8,7 +8,7 @@ export default class RegisterNewUserAction {
             console.log("BODY:",body);
             const user = new User();
             const password = await bcrypt.hash(body.password, 10);
-            user.username = body.userName;
+            user.username = body.username;
             user.email = body.email;                                
             user.password = password;
             console.log("USER:",user);
