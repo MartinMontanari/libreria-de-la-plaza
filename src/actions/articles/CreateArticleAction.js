@@ -8,9 +8,8 @@ export default class CreateArticleAction {
             const article = new Article();
             article.id = body.id;
             article.name = body.name;
-            article.description = body.description;
+            article.brand = body.brand;
             article.price = body.price;
-            article.image = body.image;
             console.log("ARTICLE:",article);
             await article.save();
             return res.status(201).json({ message: "Articulo guardado correctamente."});

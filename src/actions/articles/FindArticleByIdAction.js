@@ -6,6 +6,9 @@ export default class FindArticleByIdAction {
             const id = req.params.id;
             console.log("ARTICLE ID: ",id);
             const article = await Article.findById(id).lean();
+            if(!article || article === []){
+                return res.status(404).json({message: 'Articulo no encontrado.'});
+            }
             console.log("ARTICLE:",article);
             return res.status(200).json(article);
         } catch(error){

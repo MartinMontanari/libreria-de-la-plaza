@@ -10,16 +10,12 @@ const articleSchema = new Schema({
         type: String,
         required: true,
     },
-    description: {
+    brand: {
         type: String,
         required: true,
     },
     price: {
         type: Number,
-        required: true,
-    },
-    image: {
-        type: String,
         required: true,
     },
 }, {
